@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- This links the CSS file to style the page -->
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Website title shown in browser tab -->
+    <title>Group One Portfolio Website</title>
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <!-- This contains the navigation links -->
+    <header>
+        <h1>Group One Portfolio</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <!-- Main introduction section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Creative Portfolio Website</h2>
+            <p>
+                This is a responsive portfolio website project created using
+                HTML, CSS and JavaScript.
+            </p>
+
+            <!-- Extra button -->
+            <button onclick="showModal()">View Group Info</button>
+        </div>
+
+        <div class="hero-image">
+
+            <!-- IMPORTANT -->
+            <!-- Clicking this image opens the modal popup -->
+            <img 
+                src="images/EX.jpg" 
+                alt="Sample Portfolio Image"
+                onclick="showModal()"
+            >
+
+            <!-- Instruction text -->
+            <p class="click-note">Click photo to view group details</p>
+
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects">
+        <h2>Our Projects</h2>
+
+        <div class="project-grid">
+
+            <div class="card">
+                <img src="images/Fastlane_Cover.png" alt="Project 1">
+                <h3>Project One: Designs</h3>
+                <p>Logo and UI Designs.</p>
+            </div>
+
+            <div class="card">
+                <img src="images/pro.jpg" alt="Project 2">
+                <h3>Project Two: Website for Restaurant</h3>
+                <p>Responsive and modern web design for businesses.</p>
+            </div>
+
+            <div class="card">
+                <img src="images/proo.jpg" alt="Project 3">
+                <h3>Project Three: E-Commerce Website</h3>
+                <p>Modern E-Commerce Website showcasing your products and mode of purchase.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MODAL SECTION -->
+    <!-- Pop-up modal for group information -->
+    <div id="infoModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+
+            <h2>Group Information</h2>
+
+            <p>
+                Digital Media II, Group One details:
+            </p>
+
+            <br>
+
+            <p><strong>Group Name:</strong> Creative Developers</p>
+             <p><strong>Group Members:</strong><br> Amarah W. Sannoh - ID#: 10284<br>
+            Mustapha T. Gondon - ID#: 10310<br> Sylvester D. Yeaney - ID#: 10309<br> Matty Zoegar - ID#: 10294<br> Melvin Dahn - ID#: 10301<br> Prince S.K Marbiah - ID#: 10288<br> Sara M. Varney - ID#: 10277<br> Trust Tommy - ID#: 10424<br> Josephine Sackie - ID#: 10265<br> Terry Johnson - ID#: 10285</p>
+            <p><strong>School:</strong> Starz University</p>
+            <p><strong>Project:</strong> Responsive Portfolio Website</p>
+            <p><strong>Skills:</strong> HTML, CSS, and little bit of JavaScript</p>
+
+            <br>
+
+            <button onclick="closeModal()">Close</button>
+        </div>
+
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <p>&copy; 2026 Group One Portfolio Website. All Rights Reserved.</p>
+    </footer>
+
+    <!-- This links the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

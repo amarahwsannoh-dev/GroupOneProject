@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Contact Us</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- CONTACT FORM SECTION -->
+    <section class="contact-section">
+
+        <form id="contactForm">
+
+            <h2>Send a Message</h2>
+
+            <input type="text" placeholder="Enter your name" required>
+
+            <input type="email" placeholder="Enter your email" required>
+
+            <textarea rows="6" placeholder="Write your message"></textarea>
+
+            <button type="submit">Submit Form</button>
+
+        </form>
+
+    </section>
+
+    <!-- CONFIRMATION MODAL -->
+    <div id="confirmModal" class="modal">
+
+        <div class="modal-content">
+            <h2>Confirmation</h2>
+
+            <p>Are you sure you want to submit this form?</p>
+
+            <button onclick="confirmSubmit()">Yes</button>
+            <button onclick="cancelSubmit()">Cancel</button>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Group One Portfolio Website. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
